@@ -1,0 +1,6 @@
+<h2>Список заказов</h2>
+<ul>
+    {% for order in orders %}
+        <li>Заказ №{{ order.id }} от {{ order.client.name }} на сумму {{ order.total_amount }}</li>
+    {% endfor %}
+</ul>
